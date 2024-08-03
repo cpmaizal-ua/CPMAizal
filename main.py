@@ -1,8 +1,6 @@
 import requests
 from time import sleep
-BASE_URL: str = "https://www.cpmayan
-
-.com/api"
+BASE_URL: str = "https://www.cpmayan.com/api"
 
 class CPMAyan:
 
