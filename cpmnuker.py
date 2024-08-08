@@ -1,4 +1,4 @@
-#!/usr/bin/python
+﻿#!/usr/bin/python
 
 # Copyright (C) Anasov <me@anasov.ly> - All Rights Reserved
 # Unauthorized copying of this file, via any medium is strictly prohibited
@@ -14,8 +14,8 @@ from rich.text import Text
 from rich.style import Style
 from cpmayan import CPMAyan
 
-__TELEGRAM_ACCOUNT__ = "Itzayano"
-__TELEGRAM_ACCOUNT__   = "ayanlynx"
+__CHANNEL_USERNAME__ = "Itzayano"
+__GROUP_USERNAME__   = "ayanlynx"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -40,23 +40,20 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name =  "███████╗ ██████╗ ██████╗ ██╗  ██╗██╗ █████╗\n"
-    brand_name += "██╔════╝██╔═══██╗██╔══██╗██║  ██║██║██╔══██╗\n"
-    brand_name += "███████╗██║   ██║██████╔╝███████║██║███████║\n"
-    brand_name += "╚════██║██║   ██║██╔═══╝ ██╔══██║██║██╔══██║\n"
-    brand_name += "███████║╚██████╔╝██║     ██║  ██║██║██║  ██║\n"
-    brand_name += "╚══════╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\n"
+    brand_name =  " ██████╗██████╗ ███╗   ███╗███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗\n"
+    brand_name += "██╔════╝██╔══██╗████╗ ████║████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗\n"
+    brand_name += "██║     ██████╔╝██╔████╔██║██╔██╗ ██║██║   ██║█████╔╝ █████╗  ██████╔╝\n"
+    brand_name += "██║     ██╔═══╝ ██║╚██╔╝██║██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗\n"
+    brand_name += "╚██████╗██║     ██║ ╚═╝ ██║██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║\n"
+    brand_name += " ╚═════╝╚═╝     ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\n"
     colors = [
-
-https://github.com/cpmayan/CPMAyan.git
-
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
         "rgb(255,0,255)"
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-- [ ]     console.print("[bold blue]♕ CPM ayan♕ [bold blue]: Car Parking Multiplayer Hacking Tool.")
+    console.print("[bold green]♕ CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
@@ -235,7 +232,7 @@ if __name__ == "__main__":
                 console.print("[bold cyan][!] Enter your new ID.[/bold cyan]")
                 new_id = Prompt.ask("[bold][?] ID[/bold]")
                 console.print("[bold cyan][%] Saving your data[/bold cyan]: ", end=None)
-                if len(new_id) >= 9 and len(new_id) <= 999 and (' ' in new_id) == False:
+                if len(new_id) >= 9 and len(new_id) <= 14 and (' ' in new_id) == False:
                     if cpm.set_player_localid(new_id.upper()):
                         console.print("[bold green]SUCCESSFUL.[/bold green]")
                         console.print("==================================")
@@ -325,7 +322,7 @@ if __name__ == "__main__":
                 if status == 0:
                     console.print("[bold green]SUCCESSFUL.[/bold green]")
                     console.print("==================================")
-                    console.print(f"[bold red]! INFO[/bold red]: In order to tweak this account with CPMSophia")
+                    console.print(f"[bold red]! INFO[/bold red]: In order to tweak this account with CPMNuker")
                     console.print("you most sign-in to the game using this account.")
                     sleep(2)
                     continue
