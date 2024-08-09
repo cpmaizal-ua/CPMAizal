@@ -6,8 +6,8 @@ from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
 
-__CHANNEL_USERNAME__ = "Itzayano"
-__GROUP_USERNAME__   = "ayanlynx"
+__CHANNEL_USERNAME__ = "CPMAyanLynx"
+__GROUP_USERNAME__   = "CPMAyanLynxchat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
