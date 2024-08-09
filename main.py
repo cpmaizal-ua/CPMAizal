@@ -5,7 +5,6 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from cpmayan import CPMAyan
 
 __CHANNEL_USERNAME__ = "Itzayano"
 __GROUP_USERNAME__   = "ayanlynx"
