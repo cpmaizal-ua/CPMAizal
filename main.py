@@ -1,3 +1,10 @@
+﻿#!/usr/bin/python
+
+# Copyright (C) Anasov <me@anasov.ly> - All Rights Reserved
+# Unauthorized copying of this file, via any medium is strictly prohibited
+# Proprietary and confidential
+# Written by Anasov <me@anasov.ly>, 05, May, 2024.
+
 import random
 from time import sleep
 import os, signal, sys
@@ -5,9 +12,10 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
+from cpmnuker import CPMNuker
 
-__CHANNEL_USERNAME__ = "CPMAyanLynx"
-__GROUP_USERNAME__   = "CPMAyanLynxchat"
+__CHANNEL_USERNAME__ = "CPMNuker"
+__GROUP_USERNAME__   = "CPMNukerChat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -45,7 +53,7 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-    console.print("[bold green]♕ 👑CPMAyanlynx👑[/bold green]: Car Parking Multiplayer Hacking Tool.")
+    console.print("[bold green]♕ CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
@@ -108,8 +116,7 @@ if __name__ == "__main__":
         acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
         acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
         console.print("[bold cyan][%] Trying to Login[/bold cyan]: ", end=None)
-        cpm = (acc_access_key)
-        
+        cpm = CPMNuker(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
