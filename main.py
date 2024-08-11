@@ -94,8 +94,8 @@ def banner():
     os.system('cls' if os.name == 'nt' else 'clear')
     text = "=" * 58
     print(Colorate.Horizontal(Colors.yellow_to_green,(text)))
-    versi = "CyberCPM Version: 1.02.4 || Author https://t.me/@DPR_LynX"
-    print(Colorate.Horizontal(Colors.red_to_yellow,(versi)))
+    versi = "AyanCPM Version: 1.02.4 || Author https://t.me/@Itz_ayano
+print(Colorate.Horizontal(Colors.red_to_yellow,(versi)))
     text = "=" * 58
     print(Colorate.Horizontal(Colors.yellow_to_green,(text)))
     print("< Wajib Logout Account CPM Sebelum Menggunakan Tools Ini >")
