@@ -21,8 +21,8 @@ from rich.text import Text
 from rich.style import Style
 from cpmnuker import CPMNuker
 
-__CHANNEL_USERNAME__ = "KINGCPMoff"
-__GROUP_USERNAME__   = "KINGCPMchat"
+__CHANNEL_USERNAME__ = "Toolscpm"
+__GROUP_USERNAME__   = "ToolscpmChat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -47,7 +47,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('KINGCPM', font='drpepper')
+    brand_name = figlet_format('CPMAizal', font='drpepper')
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -55,7 +55,7 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text, end=None)
-    console.print("[bold green]♕ CPMKing[/bold green]: Car Parking Multiplayer 2 Hacking Tool.")
+    console.print("[bold green]♕ CPMAizal is the owner of this tool telegram @ItzAizal[/bold green]: Car Parking Multiplayer 2 Hacking Tool And Get In touch with me to buy an unlimitied balance.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from the game before using this tool !.", end="\n\n")
