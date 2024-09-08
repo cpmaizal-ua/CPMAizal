@@ -13,10 +13,10 @@
 [don't know how to install python ?](#install-python)
 ```
 git clone
-https://github.com/cpmaizal2/CPMAizal2.git
+https://github.com/cpmaizal2/CPMAizal.git
 ```
 ```
-cd cpmaizal2
+cd CPMAizal
 ```
 ```
 pip install -r requirements.txt
