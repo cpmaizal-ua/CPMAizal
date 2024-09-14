@@ -62,10 +62,7 @@ def load_player_data(cpm):
             console.print(f"[bold green]Coins  [/bold green]: { (WalletData.get('Coins') if 'Coins' in WalletData else 'UNDEFINED') }.")
         else:
             console.print("[bold red]! ERROR[/bold red]: new accounts most be signed-in to the game at least once !.")
-            exit(1)
-    else:
-        console.print("[bold red]! ERROR[/bold red]: seems like your login is not properly set !.")
-        exit(1)
+            exit(1)t(1)
     
 def load_key_data(cpm):
     data = cpm.get_key_data()
